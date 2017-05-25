@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Lightweight static files middleware for Koa2",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests"
+  },
   "engines": {
     "node": "7.6.0"
   },
@@ -21,5 +23,9 @@
     "type": "git",
     "url": "https://github.com/mosluce/koa-static.git"
   },
-  "homepage": "https://github.com/mosluce/koa-static"
+  "homepage": "https://github.com/mosluce/koa-static",
+  "devDependencies": {
+    "koa": "^2.2.0",
+    "mocha": "^3.4.2"
+  }
 }
