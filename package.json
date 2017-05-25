@@ -1,6 +1,6 @@
 {
   "name": "koa-static-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight static files middleware for Koa2",
   "main": "index.js",
   "scripts": {
