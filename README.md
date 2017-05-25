@@ -24,3 +24,7 @@ const app = new Koa();
 
 app.use(staticMiddleware(path.join(__dirname, 'public')));
 ```
+
+## LICENSE
+
+MIT
