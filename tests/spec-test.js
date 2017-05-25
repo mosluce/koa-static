@@ -1,10 +1,10 @@
-const assert = require('assert');
+const should = require('should');// eslint-disable-line no-unused-vars
+const mdw = require('../middleware');
 
-describe('Array', () => {
-  describe('#indexOf()', () => {
-    it('should return -1 when the value is not present', () => {
-      assert.equal(-1, [1, 2, 3].indexOf(5));
-      assert.equal(-1, [1, 2, 3].indexOf(0));
-    });
+describe('initialize', () => {
+  it('should throw error when the first parameter is not a string', () => {
+    (() => {
+      mdw(123);
+    }).should.throwError('root must be a string');
   });
 });

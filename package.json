@@ -2,7 +2,7 @@
   "name": "koa-static-middleware",
   "version": "0.0.2",
   "description": "Lightweight static files middleware for Koa2",
-  "main": "index.js",
+  "main": "middleware.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests"
   },
@@ -26,6 +26,8 @@
   "homepage": "https://github.com/mosluce/koa-static",
   "devDependencies": {
     "koa": "^2.2.0",
-    "mocha": "^3.4.2"
-  }
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  },
+  "readme": "README.md"
 }
