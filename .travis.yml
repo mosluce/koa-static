@@ -1,5 +1,13 @@
 language: node_js
 node_js:
-  - stable
-  - '7'
-
+- stable
+- '7'
+deploy:
+  provider: npm
+  email: mosluce@gmail.com
+  api_key:
+    secure: dEnOJbOF5NUwFFtxtxsCuEOv89sCeOpr0fmiECrZMSEcSTCu2Gz+fmY1TRH2FKwtQXVpCt/kF4yTJJxAEn/IFTp4uhBhPoVaJTll7zx0N1PwYgdfQvu/vtcPi8gxZV/fDBm3kmSOwgQbnQThsZuHOwIdDbj1UsGzkJKjZLfj1LccD9MsZSr/u2bNlNR1Y92L7ac4qyLKRBem7NB0kltAt18+BFzvLGffse92weyMXGwwsf1eePaVUvYLTATrw304Xz8yuqqby0Zpbe7Y9+C2UC4AyO+ziX7m24cgpzfD7AEtNluThdn2bUb9Ue44AZejkWVNBduEmt+Mba2+nLpSikHmjKiywFrQjNr+zy0p85XhG9RazX9o88AFlUeKNHjPfs2b2w8nS1T1YHMbp1NnGLkH+79WfjwTx1Fr1KNyA0r0IoG6zxHMrHb5tPPrsWmjXtv9qr50JQYbJQk69fPGa9NaFvHDfabuPHKbL7EtchwSlLGMbkLjUjUjhyFURdg/h52NlKZEvRzevn/ly9Zmxs6HhatYFV5OgjMybBMh+gj82Q1+7ktHR2NSNcN+LU9X0JwLikTsHoeWwg0cuCJx/+bCXfwL0vDd70Aj3Z16Ji/F9qd7GQ0F2z7APPsUEwGNs/IojqpOr7BeKh3k6vs/FGdXppilCYuLHrNGthp8GSM=
+  on:
+    tags: true
+    repo: mosluce/koa-static
+    branch: master
