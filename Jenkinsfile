@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''ls -al
+        sh '''pwd
 npm install
 npm test'''
       }
