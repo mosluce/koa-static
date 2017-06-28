@@ -9,8 +9,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''npm install
-npm test'''
+        sh 'ls -al'
       }
     }
   }
