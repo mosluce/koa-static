@@ -14,4 +14,7 @@ npm test'''
       }
     }
   }
+  environment {
+    DOCKER_OPTS = '-v "$PWD":/usr/src/app -w /usr/src/app'
+  }
 }
