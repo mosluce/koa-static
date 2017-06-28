@@ -10,7 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''pwd
-ls -al'''
+ls -al /usr/src/app'''
       }
     }
   }
