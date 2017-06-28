@@ -9,7 +9,13 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'npm -v'
+        sh '''npm -v
+
+cd /usr/src/app
+
+npm install 
+
+npm test'''
       }
     }
   }
