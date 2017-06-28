@@ -1,7 +1,6 @@
 pipeline {
   agent {
     docker {
-      args '-v "$PWD":/usr/src/app -w /usr/src/app'
       image 'node'
     }
     
@@ -9,7 +8,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''npm install
+        sh '''whoami
+npm install
 npm test'''
       }
     }
