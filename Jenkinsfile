@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:7.6.0'
-      args '-v "$WORKSPACE":/usr/src/app -w /usr/src/app'
+      args '-v "$WORKSPACE":/usr/src/app -w /usr/src/app -u jenkins'
     }
     
   }
