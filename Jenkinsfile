@@ -9,10 +9,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''npm -v
-
-cd /usr/src/app
-
+        sh '''pwd
 ls -al'''
       }
     }
