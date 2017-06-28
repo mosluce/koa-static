@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    dockerfile {
-      filename '.'
+    docker {
+      image 'node:7.6.0'
     }
     
   }
