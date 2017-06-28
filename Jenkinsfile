@@ -13,9 +13,7 @@ pipeline {
 
 cd /usr/src/app
 
-npm install 
-
-npm test'''
+ls -al'''
       }
     }
   }
