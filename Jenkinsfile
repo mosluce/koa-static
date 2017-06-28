@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''node -v
-npm -v'''
+        sh '''sudo su
+node -v
+npm -v
+npm install'''
       }
     }
   }
