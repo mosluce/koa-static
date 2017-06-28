@@ -8,9 +8,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''pwd
-npm install
-npm test'''
+        sh '''node -v
+npm -v'''
       }
     }
   }
