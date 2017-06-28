@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''whoami
+        sh '''ls -al
 npm install
 npm test'''
       }
