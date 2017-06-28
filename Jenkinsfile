@@ -9,8 +9,10 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''pwd
-ls -al /usr/src/app'''
+        sh '''cd /usr/src/app
+pwd
+npm install
+npm test'''
       }
     }
   }
